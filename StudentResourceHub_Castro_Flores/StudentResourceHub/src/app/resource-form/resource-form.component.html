@@ -1,0 +1,24 @@
+<form (ngSubmit)="onSubmit()">
+    <label for="title">Title:</label>
+    <input type="text" [(ngModel)]="resource.title" name="title" required />
+  
+    <label for="description">Description:</label>
+    <textarea [(ngModel)]="resource.description" name="description" required></textarea>
+  
+    <label for="url">URL:</label>
+    <input type="url" [(ngModel)]="resource.url" name="url" required />
+  
+    <label for="category">Category:</label>
+    <select [(ngModel)]="resource.category" name="category">
+      <option *ngFor="let category of categories" [value]="category">{{ category }}</option>
+    </select>
+  
+    <label for="author">Author:</label>
+    <input type="text" [(ngModel)]="resource.author" name="author" required />
+  
+    <label for="publicationDate">Publication Date:</label>
+    <input type="date" [(ngModel)]="resource.publicationDate" name="publicationDate" required />
+  
+    <button type="submit">Submit</button>
+  </form>
+  

@@ -1,0 +1,19 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1F1F1F; /* Dark header background */
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+}
+
+.header .title {
+    font-size: 24px;
+    color: white; /* White title text */
+}
+
+.header .navigation-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Align menu to the right */
+}

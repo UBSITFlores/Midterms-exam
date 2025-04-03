@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    height: 80vh;
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #E0E0E0; /* Light text color for readability */
+    padding: 20px;
+}
+
+.about-container {
+    max-width: 800px;
+    margin: 50px auto; /* Center container on the page */
+    padding: 20px;
+    line-height: 1.6; /* Improve readability */
+}
+
+h1 {
+    font-size: 36px;
+    color: #BB86FC; /* Accent color for headings */
+}
+
+h2 {
+    font-size: 24px;
+    color: #BB86FC; /* Accent color for subheadings */
+    margin-top: 20px;
+}
+
+p {
+    font-size: 18px;
+    color: #E0E0E0;
+}

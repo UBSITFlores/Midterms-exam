@@ -1,0 +1,21 @@
+<div>
+    <h2>Category: {{ selectedCategory }}</h2>
+  
+    <select [(ngModel)]="selectedCategory" (change)="onCategoryChange()">
+      <option value="Programming">Programming</option>
+      <option value="Design">Design</option>
+      <option value="Math">Math</option>
+    </select>
+  
+    <div *ngIf="filteredResources.length === 0">
+      <p>No resources available in this category.</p>
+    </div>
+  
+    <div *ngFor="let resource of filteredResources" class="resource-card">
+      <h3>{{ resource.title }}</h3>
+      <p>{{ resource.description }}</p>
+      <span class="category">{{ resource.category }}</span>
+      <button (click)="viewDetails(resource.id)">View Details</button>
+    </div>
+  </div>
+  

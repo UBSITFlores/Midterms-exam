@@ -1,0 +1,60 @@
+/* Resource Details Styles */
+.resource-details-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .resource-details-container h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+  }
+  
+  .resource-details-container p {
+    font-size: 1.1em;
+    color: #444;
+    margin-bottom: 10px;
+  }
+  
+  .resource-details-container .category {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #f1f1f1;
+    border-radius: 12px;
+    color: #555;
+    font-size: 1em;
+    margin-top: 10px;
+  }
+  
+  .resource-details-container a {
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  .resource-details-container a:hover {
+    text-decoration: underline;
+  }
+  
+  button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  

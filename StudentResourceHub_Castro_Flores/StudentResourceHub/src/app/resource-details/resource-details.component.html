@@ -1,0 +1,15 @@
+<div *ngIf="resource">
+    <h2>{{ resource.title }}</h2>
+    <p><strong>Description:</strong> {{ resource.description }}</p>
+    <p><strong>Category:</strong> {{ resource.category }}</p>
+    <p><strong>Author:</strong> {{ resource.author }}</p>
+    <p><strong>Publication Date:</strong> {{ resource.publicationDate | date }}</p>
+    <p><strong>URL:</strong> <a [href]="resource.url" target="_blank">{{ resource.url }}</a></p>
+  
+    <button (click)="goBack()">Back to List</button>
+  </div>
+  
+  <div *ngIf="!resource">
+    <p>Loading resource details...</p>
+  </div>
+  
